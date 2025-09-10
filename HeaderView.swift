@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
-    @Binding var Task: Task
+    @Binding var Task: [Task]
     @State var EnteredTask: String = ""
     var body: some View {
         HStack{
