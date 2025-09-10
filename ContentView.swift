@@ -1,12 +1,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var Tasks: [Task] = [
-        Task("Mow the Lawn"),
-        Task("Feed the Dog"),
-        Task("Take out the Trash")
-    ]
+
+    @State var Tasks: [Task] 
     var body: some View {
+        HeaderView(Task: $Tasks)
         VStack {
 
             List {
