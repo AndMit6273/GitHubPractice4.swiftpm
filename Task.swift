@@ -6,6 +6,9 @@
 //
 
 struct Task: Hashable {
-    var nameOfTask = ""
+    let nameOfTask: String
+    
+    init(_ name: String) {
+        self.nameOfTask = name
+    }
 }
-
